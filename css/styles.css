@@ -20,8 +20,14 @@ a {
 /*Utils*/
 
 .container {
-    width: 55%;
+    width: 90%;
     margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 55%;
+    }
 }
 
 .fw-bold {
@@ -30,13 +36,21 @@ a {
 
 .header {
     background-color: var(--primaryColor);
-    height: 100vh;
+    height: 70vh;
+}
+
+@media (min-width: 768px) {
+    .header {
+        height: 100vh;
+        overflow: hidden;
+    }
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+    align-items: center;
 }
 
 .navbar__brand {
@@ -51,12 +65,12 @@ a {
 .navbar__item {
     color: #FFFFFF;
     font-size: 1rem;
-    margin-right: 20px;
-    transition: color .3s ease-in-out;
-    -webkit-transition: color .3s ease-in-out;
-    -moz-transition: color .3s ease-in-out;
-    -ms-transition: color .3s ease-in-out;
-    -o-transition: color .3s ease-in-out;
+    margin-right: 35px;
+    transition: color .2s ease-in-out;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
 }
 
 .navbar__item:last-child {
@@ -64,5 +78,58 @@ a {
 }
 
 .navbar__item:hover {
+    color: var(--secondaryColor);
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 78px);
+}
+
+@media (min-width: 768px) {
+    .copy {     
+        border-top: 1px solid white;
+    }
+}
+
+.copy__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.copy__title {
+    margin-top: 15px;
+    font-size: 2rem;
+}
+
+.copy__subtitle {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.copy__social {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.copy__icon {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    transition: color .3s ease-in-out;
+    -webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    -ms-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+}
+
+.copy__icon:hover {
     color: var(--secondaryColor);
 }
