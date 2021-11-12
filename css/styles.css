@@ -131,5 +131,5 @@ a {
 }
 
 .copy__icon:hover {
-    color: var(--secondaryColor);
+    color: var(--tertiaryColor);
 }
