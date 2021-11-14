@@ -3,6 +3,8 @@
     --secondaryColor: #FFD15C;
     --tertiaryColor: #FF4C60;
     --backgroundColor: #353353;
+    --backgroundLightBlue: #6C6CE5;
+    --backgroundYellow: #F9D74C;
 }
 
 * {
@@ -43,6 +45,14 @@ a {
 .section__title {
     color: var(--primaryColor);
     font-size: 2.5rem;
+}
+
+.bg-blue {
+    background-color: var(--backgroundLightBlue);
+}
+
+.bg-yellow {
+    background-color: var(--backgroundYellow);
 }
 
 /* Header */
@@ -217,4 +227,16 @@ a {
     grid-column: 4;
     grid-row: 3;
     place-self: center;
+}
+
+/* Education */
+.education__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
